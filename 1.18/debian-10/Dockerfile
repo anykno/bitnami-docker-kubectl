@@ -20,5 +20,5 @@ ENV BITNAMI_APP_NAME="kubectl" \
     PATH="/opt/bitnami/kubectl/bin:$PATH"
 
 USER 1001
-ENTRYPOINT [ "kubectl" ]
-CMD [ "--help" ]
+ENTRYPOINT [ "sh" ]
+CMD [ "kubectl" ]
